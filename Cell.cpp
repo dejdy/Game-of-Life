@@ -39,6 +39,6 @@ void Cell::nextGeneration()
 
 void Cell::print()
 {
-    if(getState()) cout << "1 ";
-    else cout << "0 ";
+    if(getState()) cout << "\033[1;32m*\033[0m ";
+    else cout << "\033[1;31m*\033[0m ";
 }

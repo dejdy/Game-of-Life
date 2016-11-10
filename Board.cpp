@@ -132,8 +132,6 @@ void Board::updateCells()
         for(int j = 0; j < this->getSize(); j++)
         {
             this->board[i][j] . nextGeneration();
-
-            cout << "omg";
         }
     }
 }

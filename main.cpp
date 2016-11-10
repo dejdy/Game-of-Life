@@ -1,17 +1,13 @@
 #include <iostream>
 #include "Board.h"
+#include "Game.h"
 
 using namespace std;
 
 int main()
 {
 
-    Board b(10);
-    b.loadBoard("/home/dejdy/Plocha/in.txt");
-    cout << endl;
-    b.printBoard();
-    b.nextGeneration();
-    cout << endl;
-    b.printBoard();
+    Game g(10);
+    g.start(10);
     return 0;
 }
